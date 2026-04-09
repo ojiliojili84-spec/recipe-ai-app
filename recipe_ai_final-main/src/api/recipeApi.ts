@@ -1,6 +1,6 @@
 import type { GenerateRecipeResponse, GetRecipesResponse } from '../types/recipe';
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://recipe-backend-w2wp.onrender.com';
 
 export async function generateRecipe(ingredients: string[]): Promise<GenerateRecipeResponse> {
   const response = await fetch(`${BASE_URL}/generate-recipe`, {
